@@ -1,6 +1,7 @@
 #TAG,NAME IN REPO (or git url),PURPOSE (should be a verb phrase to sound right while installing)
 A,abook,"is an offline addressbook usable by neomutt."
 A,arkenfox-user.js,"provides hardened security settings for Firefox and Librewolf to avoid Mozilla spyware and general web fingerprinting."
+A,asdf-vm,"manages all your runtime versions."
 ,atool,"manages and gives information about archives."
 ,bat,"can highlight code output and display files and is used to generate previews in the file browser."
 A,beeper-latest-bin,"brings all your chats in one app."
