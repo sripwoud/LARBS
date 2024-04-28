@@ -136,6 +136,14 @@ gitmakeinstall() {
 	cd /tmp || return 1
 }
 
+asdfplugininstall() {
+	pluginname="${1#*asdf-}"
+	whiptail --title "LARBS Installation" \
+		--infobox "Installing the ASDF plugin \`$pluginname\` ($n of $total). $1 $2" 9 70
+	[ -x "$(command -v "asdf")" ] || aurinstall asdf-vm >/dev/null 2>&1
+	sudo -u "$name" asdf plugin add "$pluginname" "$1"
+}
+
 aurinstall() {
 	whiptail --title "LARBS Installation" \
 		--infobox "Installing \`$1\` ($n of $total) from the AUR. $1 $2" 9 70
@@ -161,6 +169,7 @@ installationloop() {
 			comment="$(echo "$comment" | sed -E "s/(^\"|\"$)//g")"
 		case "$tag" in
 		"A") aurinstall "$program" "$comment" ;;
+		"ap") asdfplugininstall "$program" "$comment" ;;
 		"G") gitmakeinstall "$program" "$comment" ;;
 		"P") pipinstall "$program" "$comment" ;;
 		*) maininstall "$program" "$comment" ;;
