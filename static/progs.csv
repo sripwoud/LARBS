@@ -13,7 +13,6 @@ A,aws-iam-authenticator-bin,"is a tool to use AWS IAM credentials to authenticat
 ,bats,"tests bash scripts."
 A,beeper-latest-bin,"brings all your chats in one app."
 A,bluetuith,"is a TUI bluetooth manager."
-A,bluez-runit,"sets a runit service script for bluez."
 ,calibre,"manages your Ebooks."
 A,circom-git,"compiles cryptographic circuits used for zkSNARK and PLONK proofs."
 G,https:/github.com/sripwoud/crond-runit.git,"is a runit service for cron."
