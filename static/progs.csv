@@ -73,4 +73,5 @@ G,https://github.com/sripwoud/trezord-runit.git,"is a runit service for trezor d
 ,urlscan,"selects URLs in Mutt and terminal."
 ,wasm-pack,"is a rust -> wasm workflow tool."
 ,wiki-tui,"is a Wikipedia TUI."
+A,youtube-tui-git,"browses youtube from the terminal.'
 A,zsh-fast-syntax-highlighting-git,"provides syntax highlighting in the shell."
