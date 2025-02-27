@@ -5,8 +5,7 @@
 On an Arch-based distribution as root, run the following:
 
 ```
-curl -LO larbs.xyz/larbs.sh
-sh larbs.sh
+curl -sL raw.githubusercontent.com/sripwoud/LARBS/refs/heads/master/larbs.sh | sh
 ```
 
 That's it.
